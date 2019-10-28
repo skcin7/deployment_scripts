@@ -1,12 +1,10 @@
 # deployment_scripts
 
-Scripts I use for deployment of my apps from my local development environment to a production environment.
+My deployment scripts that I use for deployment of my apps from local development environment, to a production environment. Designed to support all sorts of various projects, even projects for completely different types and platforms (PHP web applications, Swift iOS apps, etc).
 
-My deployment script is designed to support all sorts of various projects, even projects for completely different types and platforms (such as PHP web applications, Swift iOS apps, etc).
+My deployment scripts work perfectly for me, which may or may not work for you as well, to varying degrees. Feel free to examine the code and make modifications as needed to suit your own projects. I encourage you to compare them against your own deployment scripts (hopefully you're using them!) and let me know any suggestions/changes you think might improve my current deployment.
 
-This is my script which works for what I need, which may or may not work for you in your projects. Feel free to examine the code and make modifications as needed, compare to your own deployment (hopefully you're using them!), for your own projects.
-
-...and yes, this is what I use to deploy even this deployment repository. :) (Yo dawg, I heard you like deployment scripts so I made a deployment script for your deployment so that you can deploy when you need your deployment.)
+...and yes, this is what I use to deploy this as well. :) (Obligatory: "Yo dawg, I heard you like deployment, so I made a deployment repository for your deployment scripts so that you can easily deploy when you need to deploy.")
 
 ## Usage
 
