@@ -5,7 +5,7 @@
 # live and on the server.
 
 # echo_some_text
-# Simple function to echo some text.
+# Function to simply echo some text.
 echo_some_text()
 {
 	if [ -n "$1" ]
@@ -15,8 +15,7 @@ echo_some_text()
 } # end of echo_some_text
 
 # trigger_url
-# Touch the deployment trigger URL to initiate the latest changes from the
-# git repository to the server.
+# Function to deploy to server using the trigger URL.
 trigger_url()
 {
 	local the_url='';
@@ -36,14 +35,14 @@ trigger_url()
 } # end of trigger_url
 
 # minify_assets
-# Minify CSS and JavaScript assets.
+# Function to minify CSS and JavaScript assets.
 minify_assets()
 {
 	npm run prod;
 } # end of minify_assets
 
 # git_add_commit_and_push
-# Add, commit, and push to the git repository.
+# Function to add, commit, and push to the git repository.
 git_add_commit_and_push()
 {
 	local message="No commit message.";
@@ -55,7 +54,7 @@ git_add_commit_and_push()
 
 	git add -A .
 	git commit -m "${message}"
-	git push
+	git push -u origin master
 } # end of git_add_commit_and_push
 
 #echo_some_text "Hi";
