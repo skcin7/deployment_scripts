@@ -29,7 +29,7 @@ trigger_url()
 	then
 		curl -X POST "${the_url}"
 	else
-		echo "No trigger URL was specified.";
+		echo_some_text "No trigger URL was specified.";
 	fi
 
 } # end of trigger_url
@@ -63,13 +63,15 @@ git_add_commit_and_push()
 #trigger_url "some_url";
 #trigger_url;
 
-# Default behavior:
+# Default deployment behavior stored in these variables.
+# Deployment behavior may be altered by passing input arguments when executing the
+# deployment.
 GIT_COMMIT_MESSAGE="Commited using deployment script on: `date '+%d/%m/%Y_%H:%M:%S'`.";
 MINIFY_ASSETS=false;
 TRIGGER_URL_PRODUCTION="";
 TRIGGER_URL_SANDBOX="";
 
-# Parse input:
+# Parse input arguments:
 for input in "$@"
 do
 case $input in
@@ -97,7 +99,7 @@ done
 
 # Minify the assets!
 if [ "$MINIFY_ASSETS" = true ] ; then
-    echo "Minifying the assets ...";
+    echo_some_text "Minifying the assets ...";
     minify_assets;
 fi
 
@@ -107,13 +109,13 @@ git_add_commit_and_push "${GIT_COMMIT_MESSAGE}";
 # Handle deployment of changes to the sandbox server!
 if [ -n "$TRIGGER_URL_SANDBOX" ]
 then
-	echo "Deploying to sandbox ...";
+	echo_some_text "Deploying to sandbox ...";
 	trigger_url "${TRIGGER_URL_SANDBOX}";
 fi
 
 # Handle deployment of changes to the production server!
 if [ -n "$TRIGGER_URL_PRODUCTION" ]
 then
-	echo "Deploying to production ...";
+	echo_some_text "Deploying to production ...";
 	trigger_url "${TRIGGER_URL_PRODUCTION}";
 fi
