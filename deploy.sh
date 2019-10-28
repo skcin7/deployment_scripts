@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# deploy
+# deploy.sh
 # Script to deploy changes of a development version web app to become
 # live and on the server.
 
