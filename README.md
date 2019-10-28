@@ -2,7 +2,7 @@
 
 Scripts I use for deployment of my apps (web apps, PHP APIs, Swift iOS apps, etc) to deploy from my local development environment to a production environment.
 
-...and yes, I use this for deployment for these deployment scripts as well. :) (Talk about meta!)
+...and yes, I use this for deployment for these deployment scripts as well. :)
 
 ## Usage
 
