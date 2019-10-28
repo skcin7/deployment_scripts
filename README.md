@@ -10,9 +10,18 @@ My deployment scripts work perfectly for me, which may or may not work for you a
 
 `$ deploy.sh`
 
-If you need to alter the default deployment behavior, pass additional input arguments when calling the script. Example:
+If you need to alter the default deployment behavior, pass additional input arguments when calling the script.
 
 `$ deploy.sh -commit_message="Custom commit message."`
+
+## Input arguments
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+-c --commit_message
 
 ## Add to .bash_profile
 
