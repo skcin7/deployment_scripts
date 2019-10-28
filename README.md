@@ -4,7 +4,7 @@ My deployment scripts that I use for deployment of my apps from local developmen
 
 My deployment scripts work perfectly for me, which may or may not work for you as well, to varying degrees. Feel free to examine the code and make modifications as needed to suit your own projects. I encourage you to compare them against your own deployment scripts (hopefully you're using them!) and let me know any suggestions/changes you think might improve my current deployment.
 
-...and yes, this is what I use to deploy this as well. :) (Obligatory: "Yo dawg, I heard you like deployment, so I made a deployment repository for your deployment scripts so that you can easily deploy when you need to deploy.")
+...and yes, I use this deployment to deploy this repository as well. :) (Obligatory: "Yo dawg, I heard you like deployment, so I made a deployment repository for your deployment scripts so that you can easily deploy when you need to deploy.")
 
 ## Usage
 
