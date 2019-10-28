@@ -20,12 +20,12 @@ The default deployment behavior may be modified by passing input arguments when 
 
 For each input argument, a flag is available as a single character (prefixed by `-`) and a more descriptive textual string (prefixed by `--`) both of which have the same effect and either of which may be used and substituted based on preference/convenience.
 
-| Flags                       | Type    | Description                                                               | Usage                                      |
+| Flags                       | Type    | Description                                                               | Example Usage                              |
 | --------------------------- | ------- | ------------------------------------------------------------------------- | ------------------------------------------ |
 | -c --commit_message         | String  | Specify the commit message. A default generic one is used if none is set. | `$ deploy.sh -c="Custom commit message."`  |
 | -m --minify_assets          | Boolean | Whether to minify the assets or not (defaults to false).                  | `$ deploy.sh -m=true`                      |
-| -p --trigger_url_production | String  | Trigger URL to commit the deployment to the production environment.       | `$ deploy.sh -p="http://the_trigger_url"`          |
-| -s --trigger_url_sandbox    | String  | Trigger URL to commit the deployment to the sandbox environment.          | `$ deploy.sh -p="http://the_trigger_url"`          |
+| -p --trigger_url_production | String  | Trigger URL to commit the deployment to the production environment.       | `$ deploy.sh -p="http://the_trigger_url"`  |
+| -s --trigger_url_sandbox    | String  | Trigger URL to commit the deployment to the sandbox environment.          | `$ deploy.sh -p="http://the_trigger_url"`  |
 
 ## Add to .bash_profile
 
