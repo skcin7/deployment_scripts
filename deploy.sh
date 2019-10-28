@@ -46,7 +46,7 @@ minify_assets()
 # Add, commit, and push to the git repository.
 git_add_commit_and_push()
 {
-	local message = "No commit message.";
+	local message="No commit message.";
 
 	if [ -n "$1" ]
 	then
