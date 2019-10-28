@@ -16,9 +16,9 @@ If you need to alter the default deployment behavior, pass additional input argu
 
 ## Input arguments
 
-You may modify the default deployment behavior by passing input arguments when calling the deployment.
+The default deployment behavior may be modified by passing input arguments when calling the deployment.
 
-For each input argument, a flag is available as a single character (prefixed by a single `-`) and a more descriptive string (prefixed by `--`) which both have the same effect and either of which may be used and substituted based on preference/convenience.
+For each input argument, a flag is available as a single character (prefixed by `-`) and a more descriptive textual string (prefixed by `--`) both of which have the same effect and either of which may be used and substituted based on preference/convenience.
 
 | Flags                       | Description                                                               | Usage                                      |
 | --------------------------- | ------------------------------------------------------------------------- | ------------------------------------------ |
