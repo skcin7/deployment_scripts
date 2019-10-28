@@ -64,8 +64,8 @@ git_add_commit_and_push()
 #trigger_url;
 
 # Default deployment behavior stored in these variables.
-# Deployment behavior may be altered by passing input arguments when executing the
-# deployment.
+# Deployment behavior may be altered by passing input arguments when executing the deployment.
+# e.g.: $ deploy.sh -commit_message="Custom commit message";
 GIT_COMMIT_MESSAGE="Commited using deployment script on: `date '+%d/%m/%Y_%H:%M:%S'`.";
 MINIFY_ASSETS=false;
 TRIGGER_URL_PRODUCTION="";
@@ -75,12 +75,12 @@ TRIGGER_URL_SANDBOX="";
 for input in "$@"
 do
 case $input in
-	-a=*|--minify_assets=*)
-		MINIFY_ASSETS=true;
+	-c=*|--commit_message=*)
+		GIT_COMMIT_MESSAGE="${input#*=}"
 		shift # go past argument=value
 	;;
-	-m=*|--message=*)
-		GIT_COMMIT_MESSAGE="${input#*=}"
+	-m=*|--minify_assets=*)
+		MINIFY_ASSETS=true;
 		shift # go past argument=value
 	;;
 	-p=*|--trigger_url_production=*)
