@@ -24,8 +24,8 @@ For each input argument, a flag is available as a single character (prefixed by 
 | --------------------------- | ------------------------------------------------------------------------- | ------------------------------------------ |
 | -c --commit_message         | Specify the commit message. A default generic one is used if none is set. | `$ deploy.sh -c="Custom commit message."`  |
 | -m --minify_assets          | Whether to minify the assets or not (defaults to false).                  | `$ deploy.sh -m=true`                      |
-| -p --trigger_url_production | Trigger URL to commit the deployment to the production environment.       | `$ deploy.sh -p="http://the_url"`          |
-| -p --trigger_url_sandbox    | Trigger URL to commit the deployment to the sandbox environment.          | `$ deploy.sh -p="http://the_url"`          |
+| -p --trigger_url_production | Trigger URL to commit the deployment to the production environment.       | `$ deploy.sh -p="http://the_trigger_url"`          |
+| -s --trigger_url_sandbox    | Trigger URL to commit the deployment to the sandbox environment.          | `$ deploy.sh -p="http://the_trigger_url"`          |
 
 ## Add to .bash_profile
 
