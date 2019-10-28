@@ -10,6 +10,10 @@ My deployment scripts work perfectly for me, which may or may not work for you a
 
 `$ deploy.sh`
 
+If you need to alter the default deployment behavior, pass additional input arguments when calling the script. Example:
+
+`$ deploy.sh -commit_message="Custom commit message."`
+
 ## Add to .bash_profile
 
 I place these scripts in `~/.sh/` and add the directory to my `.bash_profile` with `export PATH=${PATH}:$HOME/.sh/deployment_scripts`. With this, I can simply call `$ deploy.sh` no matter what project or directory I happen to be working in, and it works great. It's sexy.
