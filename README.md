@@ -16,12 +16,16 @@ If you need to alter the default deployment behavior, pass additional input argu
 
 ## Input arguments
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+You may modify the default deployment behavior by passing input arguments when calling the deployment.
 
--c --commit_message
+For each input argument, a flag is available as a single character (prefixed by a single `-`) and a more descriptive string (prefixed by `--`) which both have the same effect and either of which may be used and substituted based on preference/convenience.
+
+| Flags                       | Description                                                               | Usage                                      |
+| --------------------------- | ------------------------------------------------------------------------- | ------------------------------------------ |
+| -c --commit_message         | Specify the commit message. A default generic one is used if none is set. | `$ deploy.sh -c="Custom commit message."`  |
+| -m --minify_assets          | Whether to minify the assets or not (defaults to false).                  | `$ deploy.sh -m=true`                      |
+| -p --trigger_url_production | Trigger URL to commit the deployment to the production environment.       | `$ deploy.sh -p="http://the_url"`          |
+| -p --trigger_url_sandbox    | Trigger URL to commit the deployment to the sandbox environment.          | `$ deploy.sh -p="http://the_url"`          |
 
 ## Add to .bash_profile
 
